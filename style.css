@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+
+    --dark-gray: hsl(0, 0%, 59%);
+    --light-gray: hsl(0, 0%, 90%);
+    --black: hsl(0 0% 0%);
+    --white: hsl(0, 0%, 100%);
+}
+
+/* --------------------------------------------------------------Default */
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Kumbh Sans", Arial, sans-serif;
+}
+
+.body {
+    position: relative;
+    min-height: 100svh;
+    display: grid;
+    place-content: center;
+
+    background-color: var(--dark-cyan);
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+
+    user-select: none;
+}
+
+/* --------------------------------------------------------------Main */
+
+.main {
+    display: grid;
+    grid-template-columns: auto;
+    margin-block: 3rem;
+
+    border-radius: 1rem;
+    box-shadow: 0 1rem 50px hsla(0, 0%, 0%, 0.15);
+
+    overflow: hidden;
+}
+
+.primary-top__img {
+    display: block;
+
+    pointer-events: none;
+}
+
+.primary-top__person-data {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    padding-block: 4.5rem 1.5rem;
+
+    background-color: var(--white);
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.primary-top__person-profile-wrapper {
+    position: absolute;
+    box-sizing: content-box;
+    padding: .3rem;
+    top: -52.5px;
+
+    border-radius: 50%;
+    background-color: var(--white);
+}
+
+.primary-top__person-profile {
+    display: block;
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+.primary-top__person-ny {
+    display: flex;
+    gap: .5rem;
+
+    font-size: 1.1rem;
+}
+
+.primary-top__person-name {
+    font-weight: 700;
+
+    color: var(--very-dark-desaturated-blue);
+}
+
+.primary-top__person-year {
+    color: var(--dark-grayish-blue);
+}
+
+.primary-top__person-place {
+    font-size: .9rem;
+
+    color: var(--dark-grayish-blue);
+}
+
+.primary-bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1.5rem;
+
+    text-align: center;
+
+    background-color: var(--white);
+}
+
+.primary-bottom__details {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.primary-bottom__number {
+    font-weight: 700;
+    font-size: 1.2rem;
+
+    color: var(--very-dark-desaturated-blue);
+}
+
+.primary-bottom__object {
+    font-size: .6rem;
+    letter-spacing: 2px;
+
+    color: var(--dark-grayish-blue);
+}
+
+/* --------------------------------------------------------------Media Queries */
+
+@media screen and (max-width: 500px) {
+    .body {
+        background-position: right 50vw bottom 50vh, left 40vw top 50vh;
+    }
+
+    .main {
+        grid-template-columns: 325px;
+    }
+
+    .attribution {
+        display: none;
+    }
+}
+
+/* --------------------------------------------------------------Attribution */
+
+.attribution {
+    position: absolute;
+    inset: auto 0 1rem 0;
+
+    font-size: 1rem;
+    text-align: center;
+
+    color: var(--black);
+
+    cursor: default;
+}
+
+.attribution__link {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--black);
+
+    transition: color 200ms;
+}
+
+.attribution__link:hover {
+    color: var(--white);
+}
