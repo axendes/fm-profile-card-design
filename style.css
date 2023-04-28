@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
+/* --------------------------------------------------------------Variables */
+
 :root {
     --dark-cyan: hsl(185, 75%, 39%);
     --very-dark-desaturated-blue: hsl(229, 23%, 23%);
@@ -24,14 +26,14 @@
 
 .body {
     position: relative;
-    min-height: 100svh;
+    min-height: 100vh;
     display: grid;
     place-content: center;
 
     background-color: var(--dark-cyan);
     background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
     background-repeat: no-repeat, no-repeat;
-    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+    background-position: right 50vw bottom 40vh, left 50vw top 50vh;
 
     user-select: none;
 }
@@ -148,34 +150,4 @@
     .main {
         grid-template-columns: 325px;
     }
-
-    .attribution {
-        display: none;
-    }
-}
-
-/* --------------------------------------------------------------Attribution */
-
-.attribution {
-    position: absolute;
-    inset: auto 0 1rem 0;
-
-    font-size: 1rem;
-    text-align: center;
-
-    color: var(--black);
-
-    cursor: default;
-}
-
-.attribution__link {
-    text-decoration: none;
-    font-weight: 700;
-    color: var(--black);
-
-    transition: color 200ms;
-}
-
-.attribution__link:hover {
-    color: var(--white);
 }
