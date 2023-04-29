@@ -1,10 +1,11 @@
-# Frontend Mentor - Profile card component solution
+<h1 align="center">Frontend Mentor - Profile card component solution</h1>
 
-This is a solution to the [Profile card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ).
+<div align="center"><a href="https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ">This Challenge on Frontend Mentor</a></div>
+<div align="center"><a href="https://hiozen.github.io/profile-card-component/">Live Preview</a></div>
 
-## Built with
+<h2 align="center">Built with</h2>
 
-> **Semantic HTML5 markup  
-> CSS custom properties  
-> CSS Grid  
-> CSS Flex**
+<div align="center"><b>Semantic HTML5 markup</b></div>
+<div align="center"><b>CSS custom properties</b></div>
+<div align="center"><b>CSS Grid</b></div>
+<div align="center"><b>CSS Flex</b></div>
