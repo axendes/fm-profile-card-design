@@ -1,7 +1,6 @@
 <h1 align="center">Frontend Mentor - Profile card component solution</h1>
 
 <div align="center"><a href="https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ">This Challenge on Frontend Mentor</a></div>
-<div align="center"><a href="https://amortise.github.io/fm-profile-card-design/">Live Preview</a></div>
 
 <h2 align="center">Built with</h2>
 
